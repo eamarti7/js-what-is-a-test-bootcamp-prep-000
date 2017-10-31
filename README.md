@@ -10,9 +10,10 @@ Let's walk through the basics of testing. You'll discover it's not too different
 var name = "Joe"
 var height = "74"
 var message = `${name} is ${height} inches tall`
-console.log(message)
+
 
 module.exports = {name, height, message}
+console.log(message)
 ```
 
 This should look familiar except for that third line: `` var message = `${name} is ${height} inches tall` ``. It's actually pretty cool what that line does. Explore what ends up in the `message` variable by typing `console.log(message)` on the last line and then run your `index.js` file. You should see `"Joe is 74 inches tall"`. Pretty cool right? If you create a string wrapping it in back-ticks (`` ` ``) you can then use your variables directly in the string to create a sentence like
